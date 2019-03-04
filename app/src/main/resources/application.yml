@@ -1,0 +1,11 @@
+spring:
+    jpa:
+        database: MYSQL
+        hibernate:
+            ddl-auto: validate
+
+    datasource:
+        url: jdbc:mysql://mysql:localhost:3306/erient
+        username: root
+        password: changeitpls
+        driver-class-name: com.mysql.jdbc.Driver

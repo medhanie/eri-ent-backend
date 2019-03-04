@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,6 +25,7 @@ import com.google.gson.GsonBuilder;
 @Configuration
 @EnableWebMvc
 public class MainConfig implements WebMvcConfigurer {
+	private static final Logger logger = LogManager.getLogger(RestRequestLoggingInterceptor.class);
 
 	@Bean
 	public TomcatServletWebServerFactory servletContainer() {
@@ -70,7 +73,7 @@ public class MainConfig implements WebMvcConfigurer {
 		try {
 			gsonHttpMessageConverter.setGson(objectMapper());
 		} catch (Exception e) {
-			// TODO: put logger here
+			logger.info(e.getMessage());
 		}
 
 		gsonHttpMessageConverter.setSupportedMediaTypes(Arrays.asList(MediaType.APPLICATION_JSON));

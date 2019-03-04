@@ -12,7 +12,7 @@ import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.util.StreamUtils;
 
 public class RestRequestLoggingInterceptor implements ClientHttpRequestInterceptor {
-	private static Logger logger = LogManager.getLogger(RestRequestLoggingInterceptor.class);
+	private static final Logger logger = LogManager.getLogger(RestRequestLoggingInterceptor.class);
 
 	@Override
 	public ClientHttpResponse intercept(HttpRequest request, byte[] body, ClientHttpRequestExecution execution)
