@@ -28,6 +28,10 @@
 	<modules>
 		<module>app</module>
 		<module>db</module>
+		<module>ymls</module>
+		<module>schemas</module>
+		<module>json-beans</module>
+		<module>schema-beans</module>
 	</modules>
 
 	<dependencyManagement>
