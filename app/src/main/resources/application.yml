@@ -9,3 +9,7 @@ spring:
         username: root
         password: changeitpls
         driver-class-name: com.mysql.jdbc.Driver
+    
+youtube:
+    apiKey: enterKeyHere
+     
