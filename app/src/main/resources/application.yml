@@ -1,15 +1,19 @@
 spring:
-    jpa:
-        database: MYSQL
-        hibernate:
-            ddl-auto: validate
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: validate
 
-    datasource:
-        url: jdbc:mysql://mysql:localhost:3306/erient
-        username: root
-        password: changeitpls
-        driver-class-name: com.mysql.jdbc.Driver
+  datasource:
+    url: jdbc:mysql://mysql:localhost:3306/erient
+    username: root
+    password: changeitpls
+    driver-class-name: com.mysql.jdbc.Driver
     
 youtube:
-    apiKey: enterKeyHere
-     
+  apiKey: enterKeyHere
+  userId: putyouridhere
+  password: putyourpasswordhere
+project:
+  name: eri-ent-project
+  version: dev
