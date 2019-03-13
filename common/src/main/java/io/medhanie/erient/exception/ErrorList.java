@@ -1,7 +1,7 @@
 package io.medhanie.erient.exception;
 
 public enum ErrorList {
-
+	
 	UNABLE_TO_CONNECT(ErrorType.INVALID_DATA, ErrorLevel.ERROR, "ERR01", "Connection has error.");
 
 	private ErrorType type;
