@@ -1,19 +1,19 @@
 package io.medhanie.erient.exception;
 
 public enum ErrorList {
-	
-	UNABLE_TO_CONNECT(ErrorType.INVALID_DATA, ErrorLevel.ERROR, "ERR01", "Connection has error.");
+
+	UNABLE_TO_CONNECT(ErrorType.INVALID_DATA, "Connection has error.", "ERR01", ErrorLevel.ERROR);
 
 	private ErrorType type;
-	private ErrorLevel level;
-	private String code;
 	private String errorMessage;
+	private String code;
+	private ErrorLevel level;
 
-	private ErrorList(ErrorType type, ErrorLevel level, String code, String errorMessage) {
+	private ErrorList(ErrorType type, String errorMessage, String code, ErrorLevel level) {
 		this.type = type;
-		this.level = level;
-		this.code = code;
 		this.errorMessage = errorMessage;
+		this.code = code;
+		this.level = level;
 	}
 
 	public ErrorType getType() {
@@ -24,12 +24,12 @@ public enum ErrorList {
 		this.type = type;
 	}
 
-	public ErrorLevel getLevel() {
-		return level;
+	public String getErrorMessage() {
+		return errorMessage;
 	}
 
-	public void setLevel(ErrorLevel level) {
-		this.level = level;
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
 	}
 
 	public String getCode() {
@@ -40,12 +40,12 @@ public enum ErrorList {
 		this.code = code;
 	}
 
-	public String getErrorMessage() {
-		return errorMessage;
+	public ErrorLevel getLevel() {
+		return level;
 	}
 
-	public void setErrorMessage(String errorMessage) {
-		this.errorMessage = errorMessage;
+	public void setLevel(ErrorLevel level) {
+		this.level = level;
 	}
 
 }

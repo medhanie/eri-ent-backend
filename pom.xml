@@ -35,6 +35,7 @@
 		<module>schema-beans</module>
 		<module>common</module>
 		<module>security</module>
+		<module>subscription</module>
 	</modules>
 
 	<dependencyManagement>
