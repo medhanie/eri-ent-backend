@@ -26,7 +26,6 @@
 
 	</properties>
 
-
 	<modules>
 		<module>app</module>
 		<module>db</module>
@@ -35,6 +34,7 @@
 		<module>json-beans</module>
 		<module>schema-beans</module>
 		<module>common</module>
+		<module>security</module>
 	</modules>
 
 	<dependencyManagement>
