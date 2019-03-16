@@ -13,7 +13,7 @@
 
 	<artifactId>eri-ent-security</artifactId>
 	<packaging>jar</packaging>
-	<name>eri-ent-common</name>
+	<name>eri-ent-security</name>
 
 	<description>Demo project for Spring Boot</description>
 
