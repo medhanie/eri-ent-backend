@@ -15,6 +15,7 @@ import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.GsonHttpMessageConverter;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -24,6 +25,7 @@ import com.google.gson.GsonBuilder;
 
 @Configuration
 @EnableWebMvc
+@EnableScheduling
 public class MainConfig implements WebMvcConfigurer {
 	private static final Logger logger = LogManager.getLogger(RestRequestLoggingInterceptor.class);
 
