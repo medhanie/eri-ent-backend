@@ -1,4 +1,4 @@
-package io.medhanie.erient.config;
+package io.medhanie.erient.be.config;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

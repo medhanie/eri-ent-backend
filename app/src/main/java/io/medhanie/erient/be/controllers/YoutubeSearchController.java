@@ -1,4 +1,4 @@
-package io.medhanie.erient.controllers;
+package io.medhanie.erient.be.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 

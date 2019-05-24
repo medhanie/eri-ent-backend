@@ -1,4 +1,4 @@
-package io.medhanie.erient.client.authentication;
+package io.medhanie.erient.be.client.authentication;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -28,7 +28,7 @@ public class GoogleUserAuthentication {
 	@Value("${youtube.userId}")
 	private String userId;
 
-	@Value("${youtube.passord}")
+	@Value("${youtube.password}")
 	private String password;
 
 	@Value("${project.name}")

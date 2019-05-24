@@ -1,4 +1,4 @@
-package io.medhanie.erient.main;
+package io.medhanie.erient.be;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

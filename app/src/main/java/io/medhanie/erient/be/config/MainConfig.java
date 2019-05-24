@@ -1,4 +1,4 @@
-package io.medhanie.erient.config;
+package io.medhanie.erient.be.config;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,9 +23,16 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @Configuration
 @EnableWebMvc
 @EnableScheduling
+@EnableSwagger2
 public class MainConfig implements WebMvcConfigurer {
 	private static final Logger logger = LogManager.getLogger(RestRequestLoggingInterceptor.class);
 
@@ -38,7 +45,7 @@ public class MainConfig implements WebMvcConfigurer {
 
 	@Bean
 	public Gson objectMapper() throws Exception {
-		return new GsonBuilder().setDateFormat("yyyy-MM-ddTHH:mm:ss").serializeNulls().create();
+		return new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").serializeNulls().create();
 	}
 
 	@Bean
@@ -82,6 +89,12 @@ public class MainConfig implements WebMvcConfigurer {
 		converters.add(gsonHttpMessageConverter);
 
 		return converters;
+	}
+
+	@Bean
+	public Docket api() {
+		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any())
+				.paths(PathSelectors.any()).build();
 	}
 
 }

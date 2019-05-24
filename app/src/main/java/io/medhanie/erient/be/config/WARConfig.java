@@ -1,4 +1,4 @@
-package io.medhanie.erient.config;
+package io.medhanie.erient.be.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;

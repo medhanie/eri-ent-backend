@@ -1,4 +1,4 @@
-package io.medhanie.erient.config;
+package io.medhanie.erient.be.config;
 
 import java.util.Properties;
 
@@ -23,7 +23,7 @@ public class HibernateConfig {
 	public LocalSessionFactoryBean sessionFactory() {
 		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource);
-		sessionFactory.setPackagesToScan(new String[] { "io.medhanie.erient.model" });
+		sessionFactory.setPackagesToScan(new String[] { "io.medhanie.erient.be.model" });
 		sessionFactory.setHibernateProperties(hibernateProperties());
 
 		return sessionFactory;

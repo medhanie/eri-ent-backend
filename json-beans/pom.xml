@@ -38,7 +38,5 @@
 
 	<build>
 		<sourceDirectory>../ymls/src/main/resources/yml</sourceDirectory>
-
-		
 	</build>
 </project>
