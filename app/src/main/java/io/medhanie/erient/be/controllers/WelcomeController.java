@@ -14,7 +14,7 @@ public class WelcomeController {
 	
 	@RequestMapping("/greetings")
 	public String greetings() {
-		return "Application is up.";
+		return "Still Running ...";
 	}
 
 

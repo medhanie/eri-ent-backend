@@ -5,7 +5,7 @@ spring:
       ddl-auto: validate
 
   datasource:
-    url: jdbc:mysql://localhost:3306/erient 
+    url: jdbc:mysql://database:3306/erient 
     username: root
     password: changeitpls
     driver-class-name: com.mysql.jdbc.Driver
