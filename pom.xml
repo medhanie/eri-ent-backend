@@ -18,7 +18,7 @@
 		<spring.version>5.1.4.RELEASE</spring.version>
 		<log4j2.version>2.1.3.RELEASE</log4j2.version>
 		<project.youtube.version>v3-rev212-1.25.0</project.youtube.version>
-		<mysql.connector.version>5.1.47</mysql.connector.version>
+		<mysql.connector.version>8.0.16</mysql.connector.version>
 
 		<!-- Properties are prefixed with flyway. -->
 		<flyway.user>root</flyway.user>
